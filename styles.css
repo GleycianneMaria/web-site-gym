@@ -20,8 +20,11 @@
 }
 
 .logo{
-    height: 20vh;
-    width: 15vw;
+    width: 10vw;
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
     
 }
 
@@ -275,33 +278,39 @@
     align-items: center;
     margin: 20px 0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ec2d02;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f900;
+    
 }
 
 .numero {
     flex: 0 0 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #4caf50;
+    background-color: #f88d00;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
     margin-right: 20px;
+    
 }
 
 .descricao {
     flex: 1;
+    color: #fff;
 }
 
+
+
 .titulo-passo {
-    margin-bottom: 20px;
-    color: rgb(248, 252, 1);
-    font-size: 35px;
-    
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 3vw;
+    text-shadow: 1vw 1vw 1vw #000, 0 0 1vw #ff7b00, 0 0 1vw #ff7b00, 0 0 1vw #ff7b00;
+
 }
 
 .planos{
@@ -515,6 +524,7 @@ section.module.parallax-1{
     text-align: center;
     color: #ccc;
     margin: 5rem 0 5rem 0;
+    text-shadow: 1px 1px 2px #992002;
 }
 
 .data{
@@ -524,33 +534,179 @@ section.module.parallax-1{
 }
 
 .provas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: rgba(255, 255, 255, 0);
-    margin: 100px 0 50px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 30px 30px;
 }
 
-.foto-prova{
-    width: 300px;
-    height: 350px;
+.titulo-prova{
+    color: rgb(255, 54, 4);
+    text-shadow: #000 1px 1px 1px ;
+    margin-top: 50px;
+    text-align: center;
+    background: rgba(248, 217, 204, 0);
+    
+}
+
+.content-provas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    
+    
+}
+
+.car-provas{
+    width: 260px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #992002b6;
+    
+}
+
+.prova{
+    width:256px;
+    height: 90%;
+    padding: 5px 2px 0 4px;
+    border-radius: 15px;
+}
+
+.car-provas p{
+    color: #ccc;
+    background: #99200256;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.fo{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    background: #ec2d02;
+    
+}
+
+.logo-footer{
+    width: 10vw;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow:2px 2px 1px rgba(0, 0, 0, 0.575);
+}
+
+.titulo-footer{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-matricula{
+    width: 53%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family:sans-serif;
+    padding: 5px;
+    font-weight:100 ;
+    border: none;
+    background: #180f04;
+    color: #f9f9f9;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.699);
+    transition: 0.5s;
+    cursor: pointer;
     
 
 }
 
-.avaliacoes{
-    width: 300px;
-    height: 350px;
-    margin: 5px 10px 10px 10px;
-    border: 1px solid #000;
-    overflow: hidden;
-    border-radius: 0 30px 0 30px;
-    border: 1px solid #000;
-    box-shadow: 6px 6px 8px #99200285;
+.btn-matricula:hover{
+    color: #180f04;
+    background: #f3b267;
+    box-shadow: rgba(0, 0, 0, 0.541);
+    border: 1px solid #3a2204c9;
 }
 
-.nome-aluno{
-    color: #ccc;
-    background: #f83200fb ;
+
+
+.inscricao{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    margin-bottom: 20px;
+    align-items: center;
+    
+    
+    
+}
+
+.form-inscrissaum{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: #e5d1998a;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+    
+    
+}
+
+.form-inscrissaum input{
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    background: #d4c3be;
+    border: none;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.459);
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% ;
+}
+
+.footer-ul a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.footer-ul{
+    text-align:start;
+    
+}
+
+.optinos-footer{
+    list-style: none;
+    font-size: 18px;
+    padding: 6px;
+    color:#1f0904 ;
+
+
+}
+
+.info-work-active p{
+    font-weight: 100;
+    font-size: 20px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6px;
+    color:#1f0904 ;
+    
+    
+}
+
+.info-work-active{
+    margin-right: 15px;
+    margin-top: 35px;
+    
 }
